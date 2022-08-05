@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
       resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 18, vertical: 8),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
           width: double.infinity,
           color: isDark == false ? defaultColor : Colors.black,
           child: Column(
@@ -42,7 +42,11 @@ class _HomeState extends State<Home> {
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : Colors.black)),
                   Spacer(),
-                  Icon(Icons.notifications_none, size: 30),
+                  Icon(
+                    Icons.notifications_none,
+                    size: 30,
+                    color: isDark ? Colors.white : Colors.black,
+                  ),
                   SizedBox(width: 4),
                   InkWell(
                     onTap: () {
