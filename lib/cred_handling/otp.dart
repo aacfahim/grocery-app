@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:grocery_shop/common/splash.dart';
 
 class OTPverify extends StatelessWidget {
   OTPverify({Key? key}) : super(key: key);
@@ -41,7 +40,7 @@ class OTPverify extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => OTPverify())),
+                    MaterialPageRoute(builder: (context) => SplashScreen())),
                 style: ElevatedButton.styleFrom(primary: Color(0xff2196f3)),
                 child: Text("VERIFY")),
           ],

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_shop/screens/login.dart';
-import 'package:grocery_shop/screens/verify_phone.dart';
+import 'package:grocery_shop/cred_handling/login.dart';
+import 'package:grocery_shop/cred_handling/verify_phone.dart';
 
 class Registration extends StatelessWidget {
   Registration({Key? key}) : super(key: key);

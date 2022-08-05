@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:grocery_shop/screens/otp.dart';
+import 'package:grocery_shop/cred_handling/otp.dart';
 
 class VerifyPhone extends StatelessWidget {
   VerifyPhone({Key? key}) : super(key: key);
