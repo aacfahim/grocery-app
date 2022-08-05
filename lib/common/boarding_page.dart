@@ -78,7 +78,13 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       back: const Icon(Icons.arrow_back),
       skip: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600)),
       next: const Icon(Icons.arrow_forward),
-      done: const Text('Done', style: TextStyle(fontWeight: FontWeight.w600)),
+      done: ElevatedButton(
+          onPressed: () {
+            _onIntroEnd(context);
+          },
+          child: Text('Start',
+              style:
+                  TextStyle(fontWeight: FontWeight.w600, color: Colors.black))),
       curve: Curves.fastLinearToSlowEaseIn,
       controlsMargin: const EdgeInsets.all(16),
       controlsPadding: kIsWeb
