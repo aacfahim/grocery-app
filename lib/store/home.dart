@@ -37,8 +37,10 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text("Hand picked fresh\nitems only for you!",
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: isDark ? Colors.white : Colors.black)),
                   Spacer(),
                   Icon(Icons.notifications_none, size: 30),
                   SizedBox(width: 4),
@@ -95,7 +97,9 @@ class _HomeState extends State<Home> {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text("Categories",
                     style: GoogleFonts.caveat(
-                        fontSize: 25, fontWeight: FontWeight.bold)),
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? Colors.white : Colors.black)),
                 Text("See All", style: TextStyle(color: Colors.deepOrange)),
               ]),
               Expanded(
@@ -124,7 +128,10 @@ class _HomeState extends State<Home> {
                                     "${catergories[index].type}",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 15),
+                                        fontSize: 15,
+                                        color: isDark
+                                            ? Colors.white
+                                            : Colors.black),
                                   )
                                 ],
                               ),
@@ -164,7 +171,9 @@ class _HomeState extends State<Home> {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text("Popular Deals",
                     style: GoogleFonts.caveat(
-                        fontSize: 25, fontWeight: FontWeight.bold)),
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? Colors.white : Colors.black)),
                 InkWell(
                     onTap: () => Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Populars())),

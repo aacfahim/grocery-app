@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_shop/common/splash.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -106,7 +107,10 @@ class Login extends StatelessWidget {
                               style: ElevatedButton.styleFrom(
                                   primary: Color(0xff2196f3),
                                   alignment: Alignment.center),
-                              onPressed: () => null,
+                              onPressed: () => Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SplashScreen())),
                               child: Text("Sign In",
                                   style: TextStyle(color: Colors.white))),
                         ),
