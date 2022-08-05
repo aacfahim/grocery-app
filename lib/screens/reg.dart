@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_shop/screens/login.dart';
+import 'package:grocery_shop/screens/verify_phone.dart';
 
 class Registration extends StatelessWidget {
   Registration({Key? key}) : super(key: key);
@@ -50,6 +51,7 @@ class Registration extends StatelessWidget {
                 decoration: InputDecoration(
                     label: Text("Password",
                         style: TextStyle(color: Color(0xff2196f3))),
+                    suffixIcon: Icon(Icons.visibility, color: Colors.grey),
                     prefixIcon: Container(
                       margin: EdgeInsets.all(6.0),
                       decoration: BoxDecoration(
@@ -65,7 +67,8 @@ class Registration extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         primary: Color(0xff2196f3),
                         alignment: Alignment.center),
-                    onPressed: () => null,
+                    onPressed: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => VerifyPhone())),
                     child: Text("Continue",
                         style: TextStyle(color: Colors.white))),
               ),
