@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_shop/common/splash.dart';
+import 'package:grocery_shop/cred_handling/reg.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -126,7 +127,7 @@ class Login extends StatelessWidget {
                                 onPressed: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Login())),
+                                        builder: (context) => Registration())),
                                 child: Text(
                                   "Sign Up",
                                   style: TextStyle(

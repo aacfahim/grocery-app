@@ -65,7 +65,7 @@ class _RecipeState extends State<Recipe> {
                                 children: [
                                   Image.network(
                                     "${catergories[index].img}",
-                                    height: 90,
+                                    height: 80,
                                     width: 120,
                                     fit: BoxFit.cover,
                                   ),
@@ -88,7 +88,7 @@ class _RecipeState extends State<Recipe> {
                     },
                     itemCount: catergories.length),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text("Popular Deals",
                     style: GoogleFonts.caveat(

@@ -107,7 +107,7 @@ class _HomeState extends State<Home> {
                 Text("See All", style: TextStyle(color: Colors.deepOrange)),
               ]),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                                 children: [
                                   Image.network(
                                     "${catergories[index].img}",
-                                    height: 110,
+                                    height: 120,
                                     width: 120,
                                     fit: BoxFit.cover,
                                   ),
@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
                     },
                     itemCount: catergories.length),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
               Expanded(
                   flex: 2,
                   child: ListView(
@@ -202,7 +202,7 @@ class _HomeState extends State<Home> {
                                 left: 0,
                                 top: 50,
                                 child: Container(
-                                  height: 130,
+                                  height: 140,
                                   width: 150,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(
@@ -220,7 +220,7 @@ class _HomeState extends State<Home> {
                                     backgroundImage:
                                         NetworkImage("${products[index].img}"),
                                   ),
-                                  SizedBox(height: 20),
+                                  SizedBox(height: 10),
                                   Text(
                                     "${products[index].name}",
                                     style: TextStyle(
